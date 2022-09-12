@@ -94,9 +94,9 @@ html {
 
 .wanderlust {
     font-family: 'Libre Baskerville', serif;
-    font-size: 13rem;
     color: white;
     position: absolute;
+    font-size: 15vw;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -104,7 +104,7 @@ html {
 
 .flicker {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     position: absolute;
     top: 45%;
