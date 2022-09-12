@@ -1,0 +1,349 @@
+html {
+    font-size: 16px;
+}
+
+/*Header*/
+.free-shipping {
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.6rem;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-content: stretch;
+    letter-spacing: 1px;
+}
+
+.free-shipping p {
+    text-align: center;
+    margin: auto;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.logo-text a {
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #201E2F;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 4.5px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.header-sales {
+    background: rgba(173, 216, 230, 0.5);
+    margin-bottom: -15px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 1px solid #343245;
+}
+
+.forty-off, .candle-month, .valentines {
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.header-sales p {
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #201E2F;
+    font-weight: 800;
+    font-size: 0.7rem;
+    letter-spacing: 4.5px;
+    margin-top: 15px;
+    margin-bottom: -1px;
+}
+
+.header-sales a {
+    text-transform: lowercase;
+    font-size: 0.6rem;
+    letter-spacing: 3.5px;
+}
+
+.header-sales a:hover {
+    text-transform: lowercase;
+    font-size: 0.6rem;
+    letter-spacing: 3.5px;
+    color: white;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.header-back {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.wanderlust {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13rem;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flicker {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    /*Shop all button*/
+.wanderlust-button a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    border: 1.5px solid white;
+    padding: 10px 20px;
+}
+
+.wanderlust-button a:hover {
+    background: transparent;
+    padding: 10px 20px;
+    color: white;
+}
+
+.wanderlust-button {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Navigation bar*/
+.navigation-bar {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li, a {
+    text-decoration: none;
+    color: #201E2F;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+ul a {
+    position: relative;
+}
+
+ul a::before {
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: lightblue;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+ul a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/*Introduction*/
+.introduction {
+    width: 100%;
+    text-align: center;
+}
+
+.introduction h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    padding-top: 70px;
+    margin-bottom: -2px;
+}
+
+.introduction p {
+    width: 30%;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-top: 10px;
+    font-style: italic;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #201E2FFF;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.introduction a {
+    font-size: 0.8rem;
+    border: 1.5px solid white;
+    background: white;
+    padding: 4px;
+    margin-bottom: 70px;
+}
+
+.introduction a:hover {
+    font-size: 0.8rem;
+    padding: 4px;
+    background: #ADD8E6FF;
+    color: white;
+    margin-bottom: 70px;
+}
+
+/*Most popular products*/
+#features-section {
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.feature {
+    padding: 2rem;
+    margin: 0px 1.25rem 80px 1.25rem;
+    background-color: white;
+}
+
+.feature .image-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.feature .content {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.content p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -40px;
+}
+
+.feature img {
+    height: 420px;
+    width: auto;
+    margin-bottom: -20px;
+}
+
+/*Footer*/
+/*.customer-care {
+    width: 50%;
+    height: 20px;
+    overflow: hidden;
+}
+.customer-care img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    z-index: 5;
+}*/
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.help-menu {
+    width: 100%;
+}
+
+.help-menu h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.help-menu a {
+    padding: 5px;
+    display: flex;
+    bottom: 0;
+}
+
+.help-menu a:hover {
+    width: 40%;
+    bottom: -10px;
+    margin-bottom: -8px;
+    padding: 5px;
+    display: flex;
+    text-decoration: underline;
+    line-height: 20px;
+}
+
+.exclusive-services h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.exclusive-services li {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.footer-main {
+    background: #F3F3F3FF;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
