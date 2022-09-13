@@ -268,8 +268,9 @@ ul a:hover::before {
 
 .content h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
+    margin-top: -12px;
 }
 
 .content p {
@@ -291,7 +292,6 @@ ul a:hover::before {
 .feature img {
     max-width: 420px;
     height: 100%;
-    margin-bottom: -20px;
     object-fit: cover;
 }
 
@@ -303,8 +303,13 @@ ul a:hover::before {
         padding-top: 70px;
     }
 
+    .feature img {
+        max-width: 320px;
+        height: 100%;
+    }
+
     .feature {
-        padding: 2rem;
+        padding: 1rem;
         margin: 0px 1.25rem 80px 1.25rem;
         background-color: white;
         overflow: hidden;
