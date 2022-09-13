@@ -307,12 +307,14 @@ ul a:hover::before {
         padding: 2rem;
         margin: 0px 1.25rem 80px 1.25rem;
         background-color: white;
+        overflow: hidden;
     }
 
     .feature .image-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .feature .content {
