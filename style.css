@@ -412,3 +412,12 @@ ul a:hover::before {
     font-size: 0.7rem;
     letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 650px) {
+    .exclusive-services {
+        width: 60%;
+    }
+    .help-menu {
+        width: 40%;
+    }
+}
