@@ -391,6 +391,7 @@ ul a:hover::before {
     font-size: 1rem;
     letter-spacing: 1px;
     display: flex;
+    padding: 5px;
 }
 
 .exclusive-services ul li {
