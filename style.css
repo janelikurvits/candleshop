@@ -286,7 +286,7 @@ ul a:hover::before {
     margin-bottom: -20px;
 }
 
-@media only screen and (max-width: 650px), mobile {
+@media only screen and (max-width: 650px) {
     #features-section {
         display: flex;
         flex-direction: column;
@@ -327,7 +327,6 @@ ul a:hover::before {
 /*.customer-care {
     width: 50%;
     height: 20px;
-    overflow: hidden;
 }
 .customer-care img {
     max-width: 100%;
