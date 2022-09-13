@@ -212,6 +212,12 @@ ul a:hover::before {
     border-bottom: 1px solid #201E2FFF;
 }
 
+@media only screen and (max-width: 600px) {
+    .introduction p {
+        width: 55%;
+    }
+}
+
 .description {
     display: flex;
     justify-content: center;
@@ -280,6 +286,43 @@ ul a:hover::before {
     margin-bottom: -20px;
 }
 
+@media only screen and (max-width: 650px), mobile {
+    #features-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f3f3f3;
+        width: 100%;
+        padding-top: 70px;
+    }
+    .feature {
+        padding: 2rem;
+        margin: 0px 1.25rem 80px 1.25rem;
+        background-color: white;
+    }
+    .feature .image-container {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .feature .content {
+        padding: 2.5rem 0;
+        text-align: center;
+    }
+    .content h2 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+    .content p {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: -40px;
+    }
+}
 /*Footer*/
 /*.customer-care {
     width: 50%;
@@ -299,9 +342,8 @@ ul a:hover::before {
 }
 
 .help-menu {
-    width: 100%;
+    width: 30%;
 }
-
 .help-menu h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
@@ -325,17 +367,20 @@ ul a:hover::before {
     line-height: 20px;
 }
 
+.exclusive-services {
+    width: 70%;
+}
 .exclusive-services h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
     letter-spacing: 1px;
     display: flex;
-    justify-content: center;
 }
 
-.exclusive-services li {
+.exclusive-services ul li {
+    margin-left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 5px;
 }
 
