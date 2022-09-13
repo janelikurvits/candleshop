@@ -112,7 +112,7 @@ html {
     transform: translate(-50%, -50%);
 }
 
-    /*Shop all button*/
+/*Shop all button*/
 .wanderlust-button a {
     font-family: 'Libre Baskerville', serif;
     font-size: 0.8rem;
@@ -167,7 +167,7 @@ ul a {
 
 ul a::before {
     content: '';
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 2px;
     border-radius: 2px;
@@ -242,6 +242,7 @@ ul a:hover::before {
 /*Most popular products*/
 #features-section {
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #f3f3f3;
     width: 100%;
@@ -257,7 +258,6 @@ ul a:hover::before {
 .feature .image-container {
     height: auto;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
 }
 
@@ -280,41 +280,52 @@ ul a:hover::before {
     margin-bottom: -40px;
 }
 
-.feature img {
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 420px;
-    width: auto;
+}
+
+.feature img {
+    max-width: 420px;
+    height: 100%;
     margin-bottom: -20px;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 650px) {
     #features-section {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         background-color: #f3f3f3;
-        width: 100%;
         padding-top: 70px;
     }
+
     .feature {
         padding: 2rem;
         margin: 0px 1.25rem 80px 1.25rem;
         background-color: white;
     }
+
     .feature .image-container {
-        height: auto;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
+
     .feature .content {
         padding: 2.5rem 0;
         text-align: center;
     }
+
     .content h2 {
         font-family: 'Libre Baskerville', serif;
         font-size: 1.1rem;
         letter-spacing: 1px;
     }
+
     .content p {
         font-family: 'Libre Baskerville', serif;
         font-size: 0.6rem;
@@ -323,6 +334,7 @@ ul a:hover::before {
         margin-bottom: -40px;
     }
 }
+
 /*Footer*/
 /*.customer-care {
     width: 50%;
@@ -341,8 +353,9 @@ ul a:hover::before {
 }
 
 .help-menu {
-    width: 30%;
+    width: 20%;
 }
+
 .help-menu h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
@@ -367,8 +380,9 @@ ul a:hover::before {
 }
 
 .exclusive-services {
-    width: 70%;
+    width: 80%;
 }
+
 .exclusive-services h3 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
@@ -381,6 +395,10 @@ ul a:hover::before {
     display: flex;
     justify-content: left;
     padding: 5px;
+}
+
+.exclusive-list {
+    padding: 0;
 }
 
 .footer-main {
